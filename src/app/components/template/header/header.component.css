@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 56px;
+  height: auto;
+}
+
+.title-group a, .title-groupHome a {
+  display: flex;
+  align-items: center;
+}
+
+.title-group i, .title-groupHome i {
+  margin-right: 4px;
+}
+
+.title-groupHome {
+  display: none;
+}
+
+@media screen and (max-width: 599px) {
+  .header {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 16px;
+  }
+
+  .title-group, .title-groupHome {
+    margin-top: 8px;
+  }
+
+  .title-groupHome {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .title-groupHome {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+  }
+}

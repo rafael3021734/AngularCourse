@@ -1,0 +1,49 @@
+.container {
+  max-width: 600px; /* ajuste o tamanho máximo do container de acordo com o tamanho da tela */
+  margin: 0 auto; /* centralize o container na tela */
+}
+
+.card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  box-shadow: none;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%; /* defina a largura do input como 100% do container */
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+
+.btn-block {
+  display: block;
+  width: 100%; /* defina a largura do botão como 100% do container */
+}
+
+@media (min-width: 768px) {
+  /* regras de estilo para telas maiores que 768px de largura */
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    width: 50%;
+    max-width: 400px;
+  }
+}
